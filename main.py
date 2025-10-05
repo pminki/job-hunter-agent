@@ -4,8 +4,8 @@ dotenv.load_dotenv()
 
 from crewai import Crew, Agent, Task
 from crewai.project import CrewBase, task, agent, crew
-from models import JobList, RankedJobList, ChosenJob
-from tools import web_search_tool
+from models import JobList, RankedJob, ChosenJob
+# from tools import web_search_tool
 
 @CrewBase
 class JobHunterCrew:
@@ -14,15 +14,15 @@ class JobHunterCrew:
   def job_search_agent(self):
     return Agent(
       config=self.agents_config["job_search_agent"],
-      tools=[
-        web_search_tool
-      ],
+      # tools=[
+      #   web_search_tool
+      # ],
     )
 
   @agent
   def job_matching_agent(self):
     return Agent(
-      config=self.agent_config["job_matching_agent"],
+      config=self.agents_config["job_matching_agent"],
     )
 
   @agent
@@ -40,7 +40,7 @@ class JobHunterCrew:
   @agent
   def interview_prep_agent(self):
     return Agent(
-      config=self.agent_config["interview_prep_agent"],
+      config=self.agents_config["interview_prep_agent"],
     )
 
   @task
@@ -54,7 +54,7 @@ class JobHunterCrew:
   def job_matching_task(self):
     return Task(
       config=self.tasks_config["job_matching_task"],
-      output_pydantic=RankedJobList,
+      output_pydantic=RankedJob,
     )
 
   @task
@@ -85,7 +85,7 @@ class JobHunterCrew:
   @task
   def interview_prep_task(self):
     return Task(
-      config=self.tasks_config["interview_prop_task"],
+      config=self.tasks_config["interview_prep_task"],
       context=[
         self.job_selection_task(),
         self.resume_rewriting_task(),

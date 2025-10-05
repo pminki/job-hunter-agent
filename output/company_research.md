@@ -1,20 +1,24 @@
-## Company Overview
-**Innovatech** is a tech company based in San Francisco, CA.
+Please provide the following details to proceed:
+- Company name
+- Job title (ChosenJob)
+- Job posting URL (or at minimum, date posted)
+- Job location (and remote-friendliness if known)
+- Seniority level (e.g., Junior, Mid, Senior, Staff)
+- Any known constraints (visa sponsorship, flexibility, etc.)
+- Optional: key technologies or domains mentioned in the listing
 
-## Mission and Values
-Focusing on innovation and scalable engineering.
+Once you share these, I will produce the full Markdown report with:
+- ## Company Overview
+  - Size, industry, summary of what the company does, and market position
+- ## Mission and Values
+  - Claimed mission, core values, and cultural signals from public materials
+- ## Recent News or Changes
+  - Latest press releases, product launches, leadership changes, funding rounds, or strategy shifts
+- ## Role Context and Product Involvement
+  - Inferred team structure, product context, and how the role fits into roadmaps
+- ## Likely Interview Topics
+  - Thematic areas and example questions the interviewer may ask based on signals from the company and the role
+- ## Suggested Questions to Ask
+  - Thoughtful, concrete questions to surface team dynamics, success metrics, and product direction
 
-## Recent News or Changes
-[Placeholder] Recently expanded product lines in cloud services.
-
-## Role Context and Product Involvement
-Position: Senior Software Engineer — working with Python, AWS, React stack.
-
-## Likely Interview Topics
-- Python system design
-- AWS architecture
-- CI/CD and DevOps
-
-## Suggested Questions to Ask
-- How is engineering success measured?
-- What’s the team’s deployment pipeline?
+If you prefer, you can paste the full job posting text or provide the company name and I’ll locate the posting myself and proceed.
